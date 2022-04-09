@@ -1,0 +1,58 @@
+
+print("Hello , welcome to medhansh Coffee!!!!!!!!!!!")
+
+name=input("what is your name?\n")
+
+#/////////////////////////////////////////////////////////////////////
+
+if name=="Ben":
+  evil_status = input("Are you Evil\n")
+
+  if evil_status=="yes":
+      print("You are not Welcome here Ben!! Get out!!")
+      exit()
+  else:
+   print("Oh, so you're one of those good Bens. Come on in!!")
+else:
+  print("hello "+ name + ",thank you so much for coming in today\n\n")
+
+
+#////////////////////////////////////////////////////////////////////////////
+
+
+menu = "Black_coffee, Expresso, Latte, Cappucino, Frappunccino "
+
+print(name + " what would you like to order from our menu today? Here is what we are serving in.\n " + menu)
+
+order=input()
+
+quantity=input("how many "+order+" would you like to take?\n")
+
+price = 0 
+
+if order == "Frappunccino":
+    price=13
+elif order == "Black_coffee":
+    price=3
+elif order == "Expresso":
+    price=5
+elif order == "Latte":
+    cream=input=("Do you want Whipped cream? ")
+    if cream == "Yes":
+        price=11
+    else:
+        price=9
+elif order == "Cappucino":
+    price=10
+else:
+    print("Sorry, we don't have that here.")
+    
+
+total = price*int(quantity)
+
+print("Thank you your total is: $"+str(total))
+
+print("sounds good "+ name + " we will have your "+quantity + order+ " ready for you in a movement.")
+
+////////////////////////////////////////////////////////////////
+
